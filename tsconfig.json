@@ -1,0 +1,17 @@
+{
+    "extends": "@vue/tsconfig/tsconfig.web.json",
+    "include": ["env.d.ts", "resources/js/**/*", "resources/js/**/*.vue"],
+    "compilerOptions": {
+        "jsx": "preserve",
+        "baseUrl": ".",
+        "paths": {
+            "@/*": ["./resources/js/*"]
+        }
+    },
+
+    "references": [
+        {
+            "path": "./tsconfig.vite-config.json"
+        }
+    ]
+}
